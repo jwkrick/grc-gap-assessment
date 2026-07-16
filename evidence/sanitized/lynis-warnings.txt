@@ -1,0 +1,18 @@
+# Lynis 3.0.7 - Warnings and Suggestions
+# Target: ralph-lab (hostname sanitized)
+# Date: 2026-07-16
+# Sanitized: real hostname and IP removed
+
+warning[]=PKGS-7392|Found one or more vulnerable packages.
+warning[]=FIRE-4512|iptables module(s) loaded, but no rules active
+
+suggestion[]=ACCT-9628|Enable auditd to collect audit information
+suggestion[]=FINT-4350|Install a file integrity tool to monitor changes to critical and sensitive files
+suggestion[]=HRDN-7230|Harden the system by installing at least one malware scanner
+suggestion[]=BOOT-5122|Set a password on GRUB bootloader
+suggestion[]=AUTH-9286|Configure minimum/maximum password age in /etc/login.defs
+suggestion[]=AUTH-9328|Default umask in /etc/login.defs could be more strict (027)
+suggestion[]=BANN-7126|Add a legal banner to /etc/issue
+suggestion[]=BANN-7130|Add legal banner to /etc/issue.net
+suggestion[]=KRNL-6000|One or more sysctl values differ from the scan profile
+suggestion[]=KRNL-5820|Consider explicit disabling of core dump in /etc/security/limits.conf

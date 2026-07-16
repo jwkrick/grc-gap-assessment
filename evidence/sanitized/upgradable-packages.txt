@@ -1,0 +1,14 @@
+# Upgradable packages with security relevance
+# Target: ralph-lab (hostname sanitized)
+# Date: 2026-07-16
+# Source: sudo apt list --upgradable
+# Sanitized: full list truncated to security-relevant entries
+
+curl 7.81.0-1ubuntu1.24 -> 7.81.0-1ubuntu1.25 (jammy-security)
+gzip 1.10-4ubuntu4.1 -> 1.10-4ubuntu4.2 (jammy-security)
+dnsmasq-base 2.90-0ubuntu0.22.04.3 -> 2.90-0ubuntu0.22.04.4 (jammy-security)
+cups 2.4.1op1-1ubuntu4.16 -> 2.4.1op1-1ubuntu4.21 (jammy-security)
+cups-daemon 2.4.1op1-1ubuntu4.16 -> 2.4.1op1-1ubuntu4.21 (jammy-security)
+cups-client 2.4.1op1-1ubuntu4.16 -> 2.4.1op1-1ubuntu4.21 (jammy-security)
+
+# Note: additional non-security packages omitted for brevity
