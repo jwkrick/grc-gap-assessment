@@ -17,6 +17,7 @@ A CIS Benchmark gap assessment mapped to NIST SP 800-53 Rev 5, with a remediatio
 9. [Plan of Action & Milestones (POA&M)](#9-plan-of-action--milestones-poam)
 10. [Lessons Learned](#10-lessons-learned)
 11. [Appendices](#11-appendices)
+12. [Related Work](#12-related-work)
 
 ## 1. Executive Summary
 
@@ -293,6 +294,10 @@ sudo lynis audit system 2>&1 | tee ~/lynis-scan-raw.txt
 sudo grep -E "warning|suggestion" /var/log/lynis-report.dat
 sudo apt list --upgradable 2>/dev/null
 ```
+
+## 12. Related Work
+
+`ralph-lab`, the host assessed here, is the same VirtualBox VM tracked as an agent in [wazuh-siem-deployment](https://github.com/jwkrick/wazuh-siem-deployment). This report is a point-in-time snapshot; that repository documents what continuous SIEM-based monitoring of the same host looks like, including a live finding (default indexer credentials) found and remediated the same day. [atlas-rmf-evidence-collector](https://github.com/jwkrick/atlas-rmf-evidence-collector) covers a third methodology, automated continuous evidence collection, against a different host in the same lab.
 
 ---
 
